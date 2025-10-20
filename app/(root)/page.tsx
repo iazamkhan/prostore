@@ -4,7 +4,11 @@ import ProductList from "@/components/shared/product/product-list";
 const HomePage = () => {
   return (
     <>
-      <ProductList data={sampleData} title="Newest Arrivals" />
+      <ProductList
+        data={sampleData.products}
+        title="Newest Arrivals"
+        limit={4}
+      />
     </>
   );
 };
