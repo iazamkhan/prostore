@@ -20,6 +20,7 @@ const eslintConfig = [
       "lib/generated",
       "build/**",
       "next-env.d.ts",
+      "dbprisma.ts",
     ],
   },
   // Silence linting errors for machine-generated artifacts (Prisma client/wasm runtimes)
