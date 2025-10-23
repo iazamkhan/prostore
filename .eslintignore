@@ -1,0 +1,8 @@
+# Ignore generated Prisma client/runtime files
+lib/generated/prisma
+lib/generated/prisma/**
+
+# Optionally ignore other build/generated folders
+.next
+out
+node_modules

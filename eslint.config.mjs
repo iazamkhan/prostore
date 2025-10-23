@@ -16,9 +16,22 @@ const eslintConfig = [
       "node_modules/**",
       ".next/**",
       "out/**",
+      "lib/generated/**",
+      "lib/generated",
       "build/**",
       "next-env.d.ts",
     ],
+  },
+  // Silence linting errors for machine-generated artifacts (Prisma client/wasm runtimes)
+  {
+    files: ["lib/generated/**"],
+    rules: {
+      // generated code can contain patterns that violate strict project rules
+      "@typescript-eslint/no-unused-expressions": "off",
+      "@typescript-eslint/no-unused-vars": "off",
+      "@typescript-eslint/no-this-alias": "off",
+      "@typescript-eslint/no-require-imports": "off",
+    },
   },
 ];
 
