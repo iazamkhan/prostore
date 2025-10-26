@@ -21,8 +21,8 @@ const index = () => {
             {APP_NAME}
           </span>
         </div>
-        <Menu />
       </div>
+      <Menu />
     </header>
   );
 };
